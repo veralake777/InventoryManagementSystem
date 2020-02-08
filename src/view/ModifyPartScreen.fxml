@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<!--RUBRIC:C:"MODIFY PART" SCREEN: The “Modify Part” screen includes all required controls, and presents a professional appearance. -->
+<!--                        The code is complete and functions properly.-->
+<!--        A modify part screen, with fields that populate with presaved data, showing the following controls:-->
+<!--        •  radio buttons for “In-House” and “Outsourced” parts-->
+<!--        •  buttons for “Save” and “Cancel”-->
+<!--        •  text fields for ID, name, inventory level, price, max and min values, and company name or machine ID-->
+<!--        •  labels for ID, name, inventory level, price, max and min values, the application title, and company name or machine ID-->
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifyPartScreenController">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+    </rowConstraints>
+    <children>
+        <Label text="Modify Part" textFill="#0d3bc5">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <RadioButton fx:id="inHouseRadio" mnemonicParsing="false" onAction="#onActionSelectInHouse" text="In-House" GridPane.columnIndex="1">
+         <toggleGroup>
+            <ToggleGroup fx:id="modifyPart" />
+         </toggleGroup></RadioButton>
+        <RadioButton fx:id="outsourcedRadio" mnemonicParsing="false" onAction="#onActionSelectOutsourced" text="Outsourced" toggleGroup="$modifyPart" GridPane.columnIndex="2" />
+        <Label alignment="CENTER" contentDisplay="CENTER" text="ID" textAlignment="CENTER" GridPane.rowIndex="1" />
+        <Label text="Name" GridPane.rowIndex="2" />
+        <Label text="Inv" GridPane.rowIndex="3" />
+        <Label text="Price/Cost" GridPane.rowIndex="4" />
+        <Label text="Max" GridPane.rowIndex="5" />
+        <Label fx:id="modifyPartCompanyNameTxt" text="Company Name" GridPane.rowIndex="6" />
+        <TextField fx:id="partIdTxt" disable="true" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <TextField fx:id="partNameTxt" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <font>
+                <Font name="System Italic" size="12.0" />
+            </font></TextField>
+        <TextField fx:id="partInventoryTxt" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+            <font>
+                <Font name="System Italic" size="12.0" />
+            </font></TextField>
+        <TextField fx:id="partPriceTxt" GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <font>
+                <Font name="System Italic" size="12.0" />
+            </font></TextField>
+        <TextField fx:id="partMaxTxt" GridPane.columnIndex="1" GridPane.rowIndex="5">
+            <font>
+                <Font name="System Italic" size="12.0" />
+            </font></TextField>
+        <TextField fx:id="partCompanyNameTxt" GridPane.columnIndex="1" GridPane.rowIndex="6">
+            <font>
+                <Font name="System Italic" size="12.0" />
+            </font></TextField>
+        <TextField fx:id="partMinTxt" GridPane.columnIndex="3" GridPane.rowIndex="5">
+            <font>
+                <Font name="System Italic" size="12.0" />
+            </font></TextField>
+        <Label text="Min" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+
+        <Button fx:id="modifyPartSaveButton" mnemonicParsing="false" onAction="#onActionSave" text="Save" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+        <Button fx:id="modifyPartCancelButton" mnemonicParsing="false" onAction="#onActionCancel" text="Cancel" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+    </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</GridPane>
