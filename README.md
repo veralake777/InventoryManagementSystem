@@ -16,14 +16,14 @@ A system analyst from your company created the solution statements outlined in t
 requirements section based on the manufacturing organization’s business requirements. 
 You will use these solution statements to develop your application.
 
-##Requirements
-###User Interface
+## Requirements
+### User Interface
  Create a JavaFX application with a graphical user interface (GUI) based on the attached 
  “GUI Mock-Up”. Write code to display each  of the following screens in the GUI: 
 
 
 
-####A.  A main screen, showing the following controls:
+#### A.  A main screen, showing the following controls:
 
 •  buttons for “Add”, “Modify”, “Delete”, “Search” for parts and products, and “Exit”
 
@@ -35,7 +35,7 @@ You will use these solution statements to develop your application.
 
 
 
-####B.  An add part screen, showing the following controls:
+#### B.  An add part screen, showing the following controls:
 
 •  radio buttons for “In-House” and “Outsourced” parts
 
@@ -49,7 +49,7 @@ title, and company name or machine ID
 
  
 
-####C.  A modify part screen, with fields that populate with presaved data, showing the 
+#### C.  A modify part screen, with fields that populate with presaved data, showing the 
 following controls:
 
 •  radio buttons for “In-House” and “Outsourced” parts
@@ -63,7 +63,7 @@ or machine ID
 and company name or machine ID
 
 
-####D. An add product screen, showing the following controls:
+#### D. An add product screen, showing the following controls:
 
 •  buttons for “Save”, “Cancel”, “Add” part, and “Delete” part
 
@@ -77,7 +77,7 @@ and company name or machine ID
 of the search
 
 
-####E.  A modify product screen, with fields that populate with presaved data, showing the following controls:
+#### E.  A modify product screen, with fields that populate with presaved data, showing the following controls:
 
 •  buttons for “Save”, “Cancel”, “Add” part, and “Delete” part
 
@@ -90,18 +90,11 @@ of the search
 •  a “Search” button and a text field with associated list for displaying the results of 
 the search
 
-###Application
+### Application
 Write code to create the class structure provided in the attached “UML (unified modeling 
 language) Class Diagram”. Enable each  of the following capabilities in the application:
 
- 
-
-write code to create the class structure provided in the attached “UML (unified modeling 
-language) Class Diagram”. Enable each  of the following capabilities in the application:
-
- 
-
-####F.  Using the attached “UML Class Diagram”, create appropriate classes and instance 
+#### F.  Using the attached “UML Class Diagram”, create appropriate classes and instance 
 variables with the following criteria:
 
 •  five classes with the 16 associated instance variables
@@ -111,7 +104,7 @@ variables with the following criteria:
 •  variables are only modifiable through setter methods
 
 
-####G.  Add the following functionalities to the main screen, using the methods provided in 
+#### G.  Add the following functionalities to the main screen, using the methods provided in 
 the attached “UML Class Diagram”:
 
 •  redirect the user to the “Add Part”, “Modify Part”, “Add Product”, or “Modify Product” 
@@ -124,11 +117,10 @@ screens
 •  exit the main screen
 
  
-
-####H.  Add the following functionalities to the part screens, using the methods provided in 
+#### H.  Add the following functionalities to the part screens, using the methods provided in 
 the attached “UML Class Diagram”:
 
-#####1.  “Add Part” screen
+##### 1.  “Add Part” screen
 
 •  select “In-House” or “Outsourced”
 
@@ -138,7 +130,7 @@ the attached “UML Class Diagram”:
 
 •  cancel or exit out of this screen and go back to the main screen
 
-#####2.  “Modify Part” screen
+##### 2.  “Modify Part” screen
 
 •  select “In-House” or “Outsourced”
 
@@ -149,10 +141,10 @@ the attached “UML Class Diagram”:
 •  cancel or exit out of this screen and go back to the main screen
 
 
-####I.  Add the following functionalities to the product screens, using the methods provided 
+#### I.  Add the following functionalities to the product screens, using the methods provided 
 in the attached “UML Class Diagram”:
 
-#####1.  “Add Product” screen
+##### 1.  “Add Product” screen
 
 •  enter name, inventory level, price, and max and min values
 
@@ -164,7 +156,7 @@ in the attached “UML Class Diagram”:
 
 •  cancel or exit out of this screen and go back to the main screen
 
-#####2.  “Modify Product” screen
+##### 2.  “Modify Product” screen
 
 •  modify or change data values
 
@@ -177,10 +169,10 @@ in the attached “UML Class Diagram”:
 •  cancel or exit out of this screen and go back to the main screen
 
 
-####J.  Write code to implement exception controls with custom error messages for one 
+#### J.  Write code to implement exception controls with custom error messages for one 
 requirement out of each of the following sets (pick one from each):
 
-#####1.  Set 1
+##### 1.  Set 1
 
 •  entering an inventory value that exceeds the minimum or maximum value for that part 
 or product
@@ -191,7 +183,7 @@ or product
 
 •  ensuring that a product must always have at least one part
 
-#####2.  Set 2
+##### 2.  Set 2
 
 •  including a confirm dialogue for all “Delete” and “Cancel” buttons
 
@@ -208,7 +200,7 @@ with the following criteria:
 •  variables are only modifiable through setter methods
 
 
-####G.  Add the following functionalities to the main screen, using the methods provided in 
+#### G.  Add the following functionalities to the main screen, using the methods provided in 
 the attached “UML Class Diagram”:
 
 •  redirect the user to the “Add Part”, “Modify Part”, “Add Product”, or “Modify Product” 
@@ -222,10 +214,10 @@ screens
 
  
 
-####H.  Add the following functionalities to the part screens, using the methods provided in 
+#### H.  Add the following functionalities to the part screens, using the methods provided in 
 the attached “UML Class Diagram”:
 
-#####1.  “Add Part” screen
+##### 1.  “Add Part” screen
 
 •  select “In-House” or “Outsourced”
 
@@ -235,7 +227,7 @@ the attached “UML Class Diagram”:
 
 •  cancel or exit out of this screen and go back to the main screen
 
-#####2.  “Modify Part” screen
+##### 2.  “Modify Part” screen
 
 •  select “In-House” or “Outsourced”
 
@@ -246,10 +238,10 @@ the attached “UML Class Diagram”:
 •  cancel or exit out of this screen and go back to the main screen
 
 
-####I.  Add the following functionalities to the product screens, using the methods provided 
+#### I.  Add the following functionalities to the product screens, using the methods provided 
 in the attached “UML Class Diagram”:
 
-#####1.  “Add Product” screen
+##### 1.  “Add Product” screen
 
 •  enter name, inventory level, price, and max and min values
 
@@ -261,7 +253,7 @@ in the attached “UML Class Diagram”:
 
 •  cancel or exit out of this screen and go back to the main screen
 
-#####2.  “Modify Product” screen
+##### 2.  “Modify Product” screen
 
 •  modify or change data values
 
@@ -274,10 +266,10 @@ in the attached “UML Class Diagram”:
 •  cancel or exit out of this screen and go back to the main screen
 
 
-####J.  Write code to implement exception controls with custom error messages for one 
+#### J.  Write code to implement exception controls with custom error messages for one 
 requirement out of each of the following sets (pick one from each):
 
-#####1.  Set 1
+##### 1.  Set 1
 
 •  entering an inventory value that exceeds the minimum or maximum value for that part 
 or product
@@ -288,7 +280,7 @@ or product
 
 •  ensuring that a product must always have at least one part
 
-#####2.  Set 2
+##### 2.  Set 2
 
 •  including a confirm dialogue for all “Delete” and “Cancel” buttons
 
