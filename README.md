@@ -1,4 +1,5 @@
 # Inventory Management System
+WGU Software I Project
 
 ## Scenario
 You are working for a small manufacturing organization that has outgrown its current 
